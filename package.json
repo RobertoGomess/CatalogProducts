@@ -1,0 +1,24 @@
+{
+  "name": "catalogproducts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betojunior/CatalogProducts.git"
+  },
+  "author": "Beto Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/betojunior/CatalogProducts/issues"
+  },
+  "homepage": "https://github.com/betojunior/CatalogProducts#readme",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
