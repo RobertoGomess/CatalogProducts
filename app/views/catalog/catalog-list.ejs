@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<%- include('../header'); -%>
+
+<body>
+    <%- include('../menu'); -%>
+    
+    <div class="container">
+        <h1 class="grey-text text-darken-1">Catalog List</h1>
+        <%- include('list-card-catalog', {qtd : 25}) -%> 
+    </div>
+
+    <%- include('../footer'); -%>
+</body>
+
+
+</html>
