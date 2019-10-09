@@ -20,6 +20,6 @@
     "consign": "^0.1.6",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
-    "mogoose": "0.0.1-security"
+    "mongoose": "^5.7.3"
   }
 }

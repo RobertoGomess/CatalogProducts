@@ -1,18 +1,18 @@
 <div class="row">
-    <% for( let index = 1; index <= qtd; index++ ) { %>
+    <% catalogs.forEach(catalog => { %>
         <div class="col m6 xl4">
             <div class="card blue darken-1">
                 <div class="card-content white-text center">
-                    <span class="card-title">Card Title <%= index %> </span>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+                    <span class="card-title"><%= catalog.titulo %> </span>
+                    <p><%= catalog.descricao %> </p>
+                    <span><%= catalog.dataCriacao %> </span>
                 </div>
                 <div class="card-action center ">
                     <a class="white-text" href="#download"><i class="small material-icons">file_download</i></a>
                     <a class="white-text" href="#zoom"><i class="small material-icons">zoom_out_map</i></a>
                 </div>
             </div>
-        </div>
-        
-    <% } %>
+        </div>     
+    <% }) %>
+
 </div>
