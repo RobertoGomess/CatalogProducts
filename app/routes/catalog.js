@@ -8,6 +8,10 @@ module.exports = (application) => {
         application.app.controllers.catalog.registrarCatalogo(application, req, res);
     });
 
+    application.get('/catalog/:id', (req, res) => {
+        application.app.controllers.catalog.getCatalog(application, req, res);
+    });
+
     application.post('/catalog/registrarCatalogo', (req, res) => {
         application.app.controllers.catalog.cadastrarNovoCatalogo(application, req, res);
     });
