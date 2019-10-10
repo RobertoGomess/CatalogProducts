@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<%- include('../header'); -%>
+
+<body>
+    <%- include('../menu'); -%>
+    
+    <% if (cadastrado) { %>
+     <script>
+     document.addEventListener('DOMContentLoaded', function() {
+        M.toast({html: 'Cadastro feito com sucesso.'});
+      });
+     </script>
+    <% } %>
+
+    <div class="container">
+        <h2 class="center">Cadastro de catalogo</h2>
+        <div class="row">
+            <form class="col s12" action="/catalog/registrarCatalogo" method="POST">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input name="titulo" type="text" class="validate">
+                  <label for="titulo">Titulo</label>
+                </div>
+                <div class="input-field col s6">
+                  <input name="descricao" type="text" class="validate">
+                  <label for="descricao">Descricao</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input name="diretorioImagem" type="text" class="validate">
+                  <label for="diretorioImagem">Diretorio da Imagem</label>
+                </div>
+              </div>
+
+              <div class="row right">
+                    <button class="btn waves-effect waves-light" type="submit">Submit
+                        <i class="material-icons">send</i>
+                    </button>
+              </div>
+            </form>
+          </div>
+    </div>
+
+    <%- include('../footer'); -%>
+</body>
+
+
+</html>
