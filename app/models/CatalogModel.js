@@ -1,4 +1,4 @@
-const mongodb = require('../../config/mongodb');
+const mongodb = require('mongoose');
 
 var catalogSchema =  new mongodb.Schema({
     titulo : { 
