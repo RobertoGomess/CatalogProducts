@@ -1,0 +1,39 @@
+.card-animate{
+    opacity: 1;
+    animation: animarCard 1000ms;
+    transform: scale(1);
+}
+
+@keyframes animarCard {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.card-expandido{
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: inline-grid;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: animar 400ms;
+}
+
+@-webkit-keyframes animar {
+    0% {
+        width: 0%;
+        height: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}

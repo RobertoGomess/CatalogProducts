@@ -1,15 +1,25 @@
 <div class="row">
+
+    <% if (catalogs.length == 0) { %>
+        <h4 class="center grey-text text-darken-1">Nenhum registro encontrado!</h4>
+    <% } %>
+     
     <% catalogs.forEach(catalog => { %>
         <div class="col m6 xl4">
-            <div class="card blue darken-1">
+            <div class="card blue darken-1 card-animate">
                 <div class="card-content white-text center">
-                    <span class="card-title"><%= catalog.titulo %> </span>
+                                        
+                    <a class="white-text" href="/catalog/<%= catalog._id %>">
+                        <span class="card-title"><%= catalog.titulo %>
+                            <i class="small material-icons">touch_app</i>
+                        </span>
+                    </a>                    
                     <p><%= catalog.descricao %> </p>
                     <span><%= catalog.dataCriacao %> </span>
                 </div>
                 <div class="card-action center ">
                     <a class="white-text" href="#download"><i class="small material-icons">file_download</i></a>
-                    <a class="white-text" href="#zoom"><i class="small material-icons">zoom_out_map</i></a>
+                    <a class="white-text" href="#zoom"><i class="small material-icons expandir-card">fullscreen</i></a>
                 </div>
             </div>
         </div>     
